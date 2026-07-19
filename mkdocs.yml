@@ -1,0 +1,49 @@
+site_name: Waitt Group Wiki
+site_url: https://waittgroup.github.io/
+site_description: SOPs, onboarding, and reference docs for the Waitt Group
+repo_url: https://github.com/waittgroup/waittgroup.github.io
+repo_name: waittgroup/waittgroup.github.io
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - People: people.md
+  - Research: research.md
+  - Join Us: join.md
+  - New Member Guide: new-member-guide.md
+  - SOPs:
+      - ORCA on OSPool (HTCondor): sops/orca-ospool-workflow.md
