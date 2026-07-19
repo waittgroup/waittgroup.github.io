@@ -1,22 +1,24 @@
 # People
 
-_Last updated: 2026-07-18_
-
 ## Principal Investigator
 
-- **Craig Waitt** — PI
+| Photo | Name | Position | Degree |
+|-------|------|----------|--------|
+| | Craig Waitt | | |
 
 ## Current Members
 
-| Name | Role | Focus area |
-|------|------|------------|
-| _TBD_ | Grad Student | _TBD_ |
-| _TBD_ | Undergrad Researcher | _TBD_ |
+| Photo | Name | Major |
+|-------|------|-------|
+| | | |
+| | | |
 
 ## Alumni
 
-- _None yet_
+| Photo | Name | Major | Year |
+|-------|------|-------|------|
+| | | | |
 
 ---
 
-To update this page, edit `docs/people.md` and open a PR (or push directly to `main`).
+_Last updated: 2026-07-18_
