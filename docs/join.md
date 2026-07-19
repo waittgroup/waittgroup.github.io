@@ -4,10 +4,14 @@ We're always interested in hearing from prospective students and
 collaborators interested in computational chemistry, taste science, or
 ML for molecular property prediction.
 
+For a more polished look at our work and publications, see the PI's
+website: [cwaitt.github.io](https://cwaitt.github.io).
+
 ## How to reach out
 
-- Email the PI (Craig Waitt) with a short note on your background and
-  what interests you about the group's work.
+- Email the PI (Craig Waitt) at [waittc@trine.edu](mailto:waittc@trine.edu)
+  with a short note on your background and what interests you about
+  the group's work.
 - Include your CV/resume and, if applicable, a transcript.
 
 ## What we look for
@@ -22,4 +26,5 @@ ML for molecular property prediction.
 
 ## Open positions
 
-- _TBD — list current openings (undergrad, grad, postdoc) here._
+- **Undergraduate researchers** — currently accepting applications.
+  Email the PI to discuss available projects and time commitment.
