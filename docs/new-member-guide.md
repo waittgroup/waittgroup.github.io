@@ -12,11 +12,25 @@ touch any research code.
 
 1. Create a [GitHub account](https://github.com/join) if you don't
    already have one.
-2. Ask the PI to add you to the group's GitHub org (`waittgroup`).
-3. Request an OSPool account (needed for ORCA/HTCondor computational
-   workflows) — see the PI for the sign-up link.
-4. Get added to the group's shared Drive for large files (data sets,
-   papers, presentations) that don't belong in this repo.
+2. Create an [ACCESS account](https://access-ci.org/) — this is what
+   the group's compute allocations run through.
+3. Email the PI to get added to the group's GitHub org and shared
+   Drive. Send it to **waittc@trine.edu** with the subject line
+   `[Your Name] account set up`.
+
+   Copy and paste this into your email, filling in your details:
+
+   ```
+   Hi Dr. Waitt,
+
+   I'm setting up my accounts for the group.
+
+   ACCESS username: <your ACCESS username>
+   GitHub username: <your GitHub username>
+
+   Thanks,
+   <Your Name>
+   ```
 
 ## 2. Set up a Linux command-line environment
 
@@ -99,8 +113,7 @@ hands-on exercise with ASE, RDKit, and the tools above.
 - SOPs live in this wiki — if you figure out a workflow that isn't
   documented, add it (see `CLAUDE.md` in the repo for formatting
   conventions).
-- Ask questions early — computational workflows (OSPool/HTCondor
-  especially) have a learning curve.
+- Ask questions early — computational workflows have a learning curve.
 
 ## 8. First tasks
 
