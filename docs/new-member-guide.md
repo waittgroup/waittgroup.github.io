@@ -1,33 +1,100 @@
 # New Member Guide
 
 This is the onboarding SOP for new students joining the Waitt Group.
-Work through it in order during your first week.
+Work through it in order during your first week or two — it ends with
+an introductory assignment that ties everything together.
+
+Most of our work runs on **Python and Linux command-line tools**, so a
+good chunk of onboarding is getting comfortable with both before you
+touch any research code.
 
 ## 1. Get accounts set up
 
-1. Ask the PI to add you to the group's GitHub org (`waittgroup`).
-2. Request an OSPool account (needed for ORCA/HTCondor computational
+1. Create a [GitHub account](https://github.com/join) if you don't
+   already have one.
+2. Ask the PI to add you to the group's GitHub org (`waittgroup`).
+3. Request an OSPool account (needed for ORCA/HTCondor computational
    workflows) — see the PI for the sign-up link.
-3. Get added to the group's shared Drive for large files (data sets,
+4. Get added to the group's shared Drive for large files (data sets,
    papers, presentations) that don't belong in this repo.
 
-## 2. Read the fundamentals
+## 2. Set up a Linux command-line environment
 
-1. Skim [Research](research.md) to understand the group's focus areas.
-2. Read [People](people.md) to know who's who.
-3. Read through the [SOPs](sops/orca-ospool-workflow.md) relevant to
-   your project — ask your mentor which ones apply.
+- **Mac**: Linux-compatible command-line tools are built in. Open
+  `Terminal` (Applications → Utilities → Terminal) and you're ready.
+- **Windows**: Install the Windows Subsystem for Linux (WSL), which
+  gives you a real Linux environment alongside Windows:
+  ```
+  wsl --install
+  ```
+  Restart when prompted, then finish setting up your Ubuntu
+  username/password. Use this Ubuntu terminal for all command-line
+  work going forward.
+- **Chromebook**: Turn on Linux (Crostini) under
+  `Settings → Advanced → Developers → Linux development environment`,
+  then use the Terminal app it installs.
 
-## 3. Set up your local environment
+Once you have a terminal, work through the [Software Carpentry Unix
+Shell lesson](https://swcarpentry.github.io/shell-novice/) to learn
+basic commands (navigating directories, moving/copying files, etc.).
 
-1. Clone this wiki repo if you plan to contribute docs:
+## 3. Install Python and Jupyter
+
+1. Download and install **Python 3.12.2** from the official source:
+   [python.org/downloads/release/python-3122](https://www.python.org/downloads/release/python-3122/)
+   - On Windows, check **"Add Python to PATH"** during installation.
+2. Confirm the install:
    ```bash
-   git clone https://github.com/waittgroup/waittgroup.github.io.git
+   python3 --version
    ```
-2. Install the tools your specific project needs (ORCA, Python/ML
-   stack, etc.) — your mentor will point you to the relevant SOP.
+3. Install Jupyter Notebook:
+   ```bash
+   pip install notebook
+   ```
+4. Launch it to confirm it works:
+   ```bash
+   jupyter notebook
+   ```
+5. Work through the [Software Carpentry Python
+   lesson](https://swcarpentry.github.io/python-novice-inflammation/)
+   to learn basic Python.
 
-## 4. Group norms
+## 4. Install the group's Python packages
+
+```bash
+pip install ase==3.29.0 rdkit==2026.3.4
+```
+
+## 5. Learn Git and GitHub
+
+1. Work through the [Software Carpentry Git
+   lesson](https://swcarpentry.github.io/git-novice/) to learn the
+   basics (commit, push, pull, branches).
+2. **Fork the group wiki repo**: go to
+   [waittgroup/waittgroup.github.io](https://github.com/waittgroup/waittgroup.github.io)
+   on GitHub and click **Fork** to create your own copy.
+3. Clone your fork locally:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/waittgroup.github.io.git
+   ```
+4. Make a small change (e.g. add your name to [People](people.md)),
+   commit it, and push it to your fork:
+   ```bash
+   git checkout -b my-first-change
+   git add docs/people.md
+   git commit -m "Add myself to the People page"
+   git push origin my-first-change
+   ```
+5. Open a pull request from your fork's branch back to
+   `waittgroup/waittgroup.github.io` and ask your mentor to review it.
+
+## 6. Complete the introductory assignment
+
+Once your environment is set up, work through the
+[Introductory Assignment](intro-assignment.md) — it's your first
+hands-on exercise with ASE, RDKit, and the tools above.
+
+## 7. Group norms
 
 - SOPs live in this wiki — if you figure out a workflow that isn't
   documented, add it (see `CLAUDE.md` in the repo for formatting
@@ -35,6 +102,6 @@ Work through it in order during your first week.
 - Ask questions early — computational workflows (OSPool/HTCondor
   especially) have a learning curve.
 
-## 5. First tasks
+## 8. First tasks
 
 - _TBD — mentor assigns a starter task during week 1._

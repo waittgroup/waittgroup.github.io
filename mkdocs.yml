@@ -44,6 +44,8 @@ nav:
   - People: people.md
   - Research: research.md
   - Join Us: join.md
-  - New Member Guide: new-member-guide.md
+  - New Member Guide:
+      - Guide: new-member-guide.md
+      - Introductory Assignment: intro-assignment.md
   - SOPs:
       - ORCA on OSPool (HTCondor): sops/orca-ospool-workflow.md
