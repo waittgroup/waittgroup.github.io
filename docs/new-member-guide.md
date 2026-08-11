@@ -52,34 +52,57 @@ Once you have a terminal, work through the [Software Carpentry Unix
 Shell lesson](https://swcarpentry.github.io/shell-novice/) to learn
 basic commands (navigating directories, moving/copying files, etc.).
 
-## 3. Install Python and Jupyter
+## 3. Install Anaconda
 
-1. Download and install **Python 3.12.2** from the official source:
-   [python.org/downloads/release/python-3122](https://www.python.org/downloads/release/python-3122/)
-   - On Windows, check **"Add Python to PATH"** during installation.
+1. Download and install **Anaconda** from the official source:
+   [anaconda.com/download](https://www.anaconda.com/download) — use
+   the default install options for your OS.
 2. Confirm the install:
    ```bash
-   python3 --version
+   conda --version
    ```
-3. Install Jupyter Notebook:
-   ```bash
-   pip install notebook
-   ```
-4. Launch it to confirm it works:
-   ```bash
-   jupyter notebook
-   ```
-5. Work through the [Software Carpentry Python
+3. Work through the [Software Carpentry Python
    lesson](https://swcarpentry.github.io/python-novice-inflammation/)
    to learn basic Python.
 
-## 4. Install the group's Python packages
+## 4. Create a conda environment with the group's packages
 
-```bash
-pip install ase==3.29.0 rdkit==2026.3.4
-```
+1. Create a dedicated conda environment for group work:
+   ```bash
+   conda create -n waittgroup python=3.12
+   ```
+2. Activate it:
+   ```bash
+   conda activate waittgroup
+   ```
+3. Install the group's packages from conda-forge — this includes
+   ASE, RDKit, and the standard scientific Python stack:
+   ```bash
+   conda install -c conda-forge ase=3.29.0 rdkit=2026.3.4 pandas numpy scipy matplotlib jupyter notebook
+   ```
+4. Run `conda activate waittgroup` any time you're doing group work —
+   this keeps our packages separate from your system Python.
 
-## 5. Learn Git and GitHub
+## 5. Verify your install
+
+1. With the `waittgroup` environment active, launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+2. Create a new notebook and run this in the first cell to confirm
+   everything installed correctly:
+   ```python
+   import ase, rdkit, pandas, numpy, scipy, matplotlib
+   print("ase:", ase.__version__)
+   print("rdkit:", rdkit.__version__)
+   print("pandas:", pandas.__version__)
+   print("numpy:", numpy.__version__)
+   print("scipy:", scipy.__version__)
+   print("matplotlib:", matplotlib.__version__)
+   ```
+   If this runs without errors, your environment is ready.
+
+## 6. Learn Git and GitHub
 
 1. Work through the [Software Carpentry Git
    lesson](https://swcarpentry.github.io/git-novice/) to learn the
@@ -102,19 +125,19 @@ pip install ase==3.29.0 rdkit==2026.3.4
 5. Open a pull request from your fork's branch back to
    `waittgroup/waittgroup.github.io` and ask your mentor to review it.
 
-## 6. Complete the introductory assignment
+## 7. Complete the introductory assignment
 
 Once your environment is set up, work through the
 [Introductory Assignment](intro-assignment.md) — it's your first
 hands-on exercise with ASE, RDKit, and the tools above.
 
-## 7. Group norms
+## 8. Group norms
 
 - SOPs live in this wiki — if you figure out a workflow that isn't
   documented, add it (see `CLAUDE.md` in the repo for formatting
   conventions).
 - Ask questions early — computational workflows have a learning curve.
 
-## 8. First tasks
+## 9. First tasks
 
 - _TBD — mentor assigns a starter task during week 1._
