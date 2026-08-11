@@ -5,7 +5,7 @@ calculations on OSPool via HTCondor.
 
 ## Prerequisites
 
-- An active OSPool account (see the [New Member Guide](../new-member-guide.md)
+- An active OSPool account (see [OSPool Account Setup](ospool-account-setup.md)
   if you don't have one yet)
 - Access to the group's OSPool project/allocation
 - An ORCA input file (`.inp`) for the calculation you want to run

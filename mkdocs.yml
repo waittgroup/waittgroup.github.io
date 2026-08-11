@@ -50,4 +50,5 @@ nav:
       - Guide: new-member-guide.md
       - Introductory Assignment: intro-assignment.md
   - SOPs:
+      - OSPool Account Setup: sops/ospool-account-setup.md
       - ORCA on OSPool (HTCondor): sops/orca-ospool-workflow.md
