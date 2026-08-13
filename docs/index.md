@@ -2,12 +2,12 @@
 
 ## Our mission
 
-The Waitt Group works at the intersection of computational chemistry
-and taste science. Our objective is to understand and predict taste at
-the molecular level — combining QM-derived molecular descriptors with
-machine learning to model how molecular structure drives taste
-perception, using ORCA / OSPool-HTC computational workflows to scale
-the underlying quantum chemistry.
+The Waitt Group works at the intersection of computational chemistry,
+bioinformatics, and taste science. Our objective is to understand and
+predict taste at the molecular level — combining QM-derived molecular
+descriptors, receptor sequence analysis, and machine learning to model
+how molecular structure and receptor biology drive taste perception,
+using ORCA / OSPool-HTC computational workflows to scale it all.
 
 ## About this wiki
 
