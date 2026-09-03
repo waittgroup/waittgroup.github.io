@@ -14,7 +14,9 @@ touch any research code.
    already have one.
 2. Create an [ACCESS account](https://access-ci.org/) — this is what
    the group's compute allocations run through.
-3. Email the PI to get added to the group's GitHub org and shared
+3. Create a [Zotero account](https://www.zotero.org/user/register) —
+   the group uses this to manage shared references and papers.
+4. Email the PI to get added to the group's GitHub org and shared
    Drive. Send it to **waittc@trine.edu** with the subject line
    `[Your Name] account set up`.
 
@@ -27,6 +29,7 @@ touch any research code.
 
    ACCESS username: <your ACCESS username>
    GitHub username: <your GitHub username>
+   Zotero username: <your Zotero username>
 
    Thanks,
    <Your Name>
